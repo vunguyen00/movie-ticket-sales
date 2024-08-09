@@ -1,0 +1,357 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2c54; 
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(33, 4, 160, 0.877)), url('https://www.onlinekhabar.com/wp-content/uploads/2020/03/film-hall.jpg');
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1{
+    color: yellow;
+}
+.section-title {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ffd32a; 
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px); 
+    z-index: -1;
+}
+
+.main_body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 111;
+    position: sticky;
+    top:0;
+    background-blend-mode: overlay;
+}
+
+.chung {
+    width: 90%;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.function {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.viTri {
+    display: flex;
+    border-bottom: solid 2px wheat;
+    align-content: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.viTri a img {
+    height: 60px;
+    width: 170px;
+}
+
+.bookAndpd {
+    padding: 20px;
+    margin-left: 70px;
+}
+
+.bookAndpd a {
+    margin: 7px;
+    padding: 10px 20px;
+    background-color: rgb(130, 83, 12);
+    border-radius: 1px;
+}
+
+.bookAndpd .Booking_T:hover {
+    background-color: aqua;
+    color: yellow;
+}
+
+.Booking_F:hover {
+    color: blue;
+    background-color: brown;
+}
+
+.searchAndLogin {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 230px;
+    padding-left: 40px;
+}
+
+.search-container button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-container button svg {
+    fill: currentColor;
+}
+
+.Login {
+    margin-left: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+}
+
+.chose_feature {
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.Location2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+}
+
+.Location2 .first {
+    position: absolute;
+    left: 0;
+}
+.Location2 .first a{
+    padding: 0 0 0 10px;
+}
+
+.Location2 .second {
+    position: absolute;
+    right: 0;
+}
+.Location2 .second a{
+    padding: 0 0 0 10px;
+}
+.Location2 .second a:hover{
+    color: yellow;
+}
+.first .menu1 {
+    display: none;
+    background: linear-gradient(rgb(107, 0, 178), rgb(8, 0, 12));
+    padding: 20px;
+    margin-top: 20px;
+}
+.menu1{
+    list-style-type: none;
+}
+.first button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.first:hover .menu1 {
+    display: flex;
+}
+.menu1 li a:hover{
+    color: yellow;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.dropdown-content {
+    margin-top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(215, 50, 50, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.date-selection, .time-selection, .seat-selection, .food-selection {
+    margin: 20px 0;
+}
+.date-item, .time-item, .food-item, .seat {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #706fd3; 
+    color: #fff;
+}
+.date-item.selected, .time-item.selected, .food-item.selected, .seat.selected {
+    background-color: #ffd32a; 
+    color: #2c2c54; 
+}
+.seat-selection {
+    background-color: rgba(33, 4, 160, 0.877)#fff;
+    padding: 20px; 
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.section-title {
+    font-size: 24px; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.seat-screen {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.seat {
+    width: 30px; 
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border: 1px solid #ccc; 
+}
+
+.seat.unavailable {
+    background-color: #ff0000; 
+    cursor: not-allowed; 
+}
+
+.seat.selected {
+    background-color: yellow; 
+}
+
+.total-price {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #ffd32a;
+}
+.btn{
+    
+}
+.btn-book {
+    margin: 20px;
+    background-color: #ffd32a;
+    color: #2c2c54;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-book:hover {
+    background-color: #ffa502;
+}
+.btn-back {
+    margin: 20px;
+    background-color: #ffd32a;
+    color: #2c2c54;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-back:hover {
+    background-color: #ffa502;
+}
+.ticket-selector {
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 10px;
+    transform: translateX(-8%);
+}
+.ticket-selector button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ticket-selector input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 16px;
+}

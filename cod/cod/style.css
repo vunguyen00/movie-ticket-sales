@@ -1,0 +1,1571 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+
+.header{
+    background-color:rgba(189, 23, 189, 0.58);
+    height:127px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    padding-top: 130px;
+}
+
+.logo-mb{
+    position:absolute;
+    top:18px;
+    left: 10px;
+    width:230px;
+    height:80px;
+    background:url() no-repeat center center;
+    -webkit-background-size:contain;
+   
+    left:-20px;
+}
+.facilities-nav{
+    text-align:right; 
+}
+.navigation{
+    text-align:right;
+}
+.search-form {
+    display: inline-block;
+}
+.search-field {
+    width: 220px;
+    height: 42px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000;
+    color: #d1d1d1;
+    opacity: 0.7;
+    font-family: 'avantgarde';
+    font-size: 14px;
+}
+
+.search-button {
+    width: 70px;
+    height: 42px;
+    background-color: #e00d7a;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'avantgarde-demi';
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #c90b68; /* Change the color as needed */
+}
+
+/* Center search field vertically */
+.search-form::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .search-form {
+        display: none;
+    }
+}
+.nav{
+    display:block;
+    width:100%;
+    border-radius:0;
+    padding:0;
+    border:0; 
+}
+.navigation ul li {
+    display: inline-block;
+    margin-right: 10px; 
+  }
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation .nav li a h1 {
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    padding: 5px 12px;
+    font-family: 'avantgarde-demi';
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative; /* Để xác định vị trí tương đối */
+}
+.navigation ul li a {
+    text-decoration: none;
+  }
+.navigation .nav{
+    border: 1px solid #e84a96;
+    background: #e84a96;
+    border-radius: 15px;
+    height: 35px;
+    width: 1100px;
+    outline: 1px solid #e84a96;
+    outline-offset: 2px;
+    padding: 3px;
+}
+.navigation .nav li {
+    text-align: center;
+    padding-left: 9px;
+    position: relative;
+    left: -20px;
+    padding-left: 7px;
+}
+.navigation .link-home{
+    text-decoration: none;
+    position: absolute;
+    left: 870px;
+    top: 31px;
+}
+.navigation .nav li:hover{
+    background-color:orange;
+    padding-right: 22px;
+    height: 35px;
+    border-radius: 13px;
+}
+.navigation{
+    padding-left: 240px;
+    padding-top: 10px;
+}
+.link-home {
+    margin-top: -5px;
+    border: 1px solid #e84a96;
+    border-radius: 15px;
+    background: #e84a96;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 4px;
+}
+.register-content{
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background: url("https://marketplace.canva.com/EAErQm7MA7k/1/0/450w/canva-xanh-ng%E1%BB%8Dc-lam-m%E1%BB%81m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-l%E1%BB%9Di-kh%E1%BA%B3ng-%C4%91%E1%BB%8Bnh-tr%C3%ADch-d%E1%BA%ABn-chung-h%C3%ACnh-n%E1%BB%81n-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-6uQ_fR5qbHM.jpg");
+    border-bottom: 1px solid #fff;
+}
+.register-wrap{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+.register-wrap ul{
+    display: inline-block;
+    overflow: hidden;  
+}
+.register-wrap ul li.btn-register {
+    background: url("https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-register.png") no-repeat left 1px;
+}
+.register-wrap ul li {
+    float: left;
+    margin-right: 30px;
+    overflow: hidden;
+}
+.register-wrap ul li.btn-login {
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-login.png) no-repeat left top;
+}
+.register-wrap ul li a{
+    text-decoration: none;
+    padding: 25px 0 23px 71px;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e00d7a;
+}
+.hotline {
+    float: right;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f37520;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-call.png) no-repeat left 7px;
+    padding: 15px 0 19px 58px;
+    text-decoration: none;
+}
+.register-wrap ul li:hover{
+    background-color: orange;
+    height: 63px;
+}
+.hotline:hover{
+    background-color: #c90b68;
+    height: 28px;
+}
+.cart-content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url("https://marketplace.canva.com/EAErQm7MA7k/1/0/450w/canva-xanh-ng%E1%BB%8Dc-lam-m%E1%BB%81m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-l%E1%BB%9Di-kh%E1%BA%B3ng-%C4%91%E1%BB%8Bnh-tr%C3%ADch-d%E1%BA%ABn-chung-h%C3%ACnh-n%E1%BB%81n-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-6uQ_fR5qbHM.jpg");
+}
+.cart-wrap {
+    display: block;
+    width: 90%;
+    height: 136px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.block-title {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: 100%;
+    position: relative;
+    line-height: 144px;
+    z-index: 1;
+    padding-left: 150px;
+}
+.block-title h2 {
+    font-family: 'Futurab';
+    font-weight: normal;
+    font-size: 36px;
+    color: #e00d7a;
+    line-height: 32px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
+    text-align: left;
+}
+.block-title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    width: 114px;
+    height: 130px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-ticket.png) no-repeat center center;
+}
+.block-list {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    margin-top: 12px;
+    max-width: 910px;
+    text-align: center;
+}
+.select-list {
+    position: relative;
+    height: 48px;
+    width: 290px;
+    margin: 0 5px 12px 5px;
+    display: inline-block;
+}
+.select-list[data-cate='film'] .select-header {
+    border-radius: 0 30px 30px 30px;
+}
+.select-header {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid rgba(255,255,255,0);
+    color: #fff;
+}
+.select-header h3{
+    padding-top: 7px;
+}
+.select-list[data-cate='cine'] .select-header {
+    border-radius: 30px 0 30px 30px;
+}
+.select-list[data-cate='day'] .select-header {
+    border-radius: 0 30px 30px 30px;
+}
+.select-list[data-cate='hour'] .select-header {
+    border-radius: 30px 0 30px 30px;
+}
+.nav-icon-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgba(189, 23, 189, 0.58);
+}
+.nav-icon-wrap {
+    width: 90%;
+    max-width: 1300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.nav-icon-wrap li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.sub-tab{position:relative;display:block;width:90%;height:auto;white-space:nowrap;margin:0 auto;text-align:center;}
+.sub-tab ul{position:relative;display:inline-block;width:auto;overflow:hidden;}
+
+.sub-tab li{
+    background:#f18720;
+    height:74px;float:left;
+    position:relative;
+    transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+}
+.sub-tab li a{
+    font-family:'avantgarde-demi';font-weight:normal;font-size:30px;text-transform:uppercase;color:#fff;display:inline-block;width:100%;height:100%;line-height:74px;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;padding:0 45px;text-align:right;
+    text-decoration: none;
+}
+
+.sub-tab li:nth-child(1){z-index:3;border-radius:30px 50px 50px 0;}
+.sub-tab li:nth-child(1) a{text-align:center;}
+.sub-tab li:nth-child(2){z-index:2;border-radius:0 50px 50px 0;-webkit-border-radius:0 50px 50px 0;padding-left:11px;margin-left:-80px;}
+.sub-tab li:nth-child(3){z-index:1;padding-left:55px;margin-left:-80px;border-radius:0 30px 0 0;-webkit-border-radius:0 30px 0 0;}
+
+#about-page .sub-tab li:nth-child(3){-webkit-border-radius:0 50px 50px 0;}
+#film-page .sub-tab, #film-details-page .sub-tab{padding:40px 0 15px 0;}
+#news-page .sub-tab, #news-detail-page .sub-tab{padding-bottom:20px;}
+
+.sub-tab li.current{
+    background:#fecf06;
+}
+.sub-tab li.current a{
+    pointer-events:none;
+}
+.sub-tab li:not(.current):hover{background:#fecf06;}
+.sub-tab li:not(.current):hover a{color:#000;}
+.content-page{
+    background: rgba(189, 23, 189, 0.58);
+}
+.sub-tab ul li a{
+    position: relative;
+    left: -55px;
+}
+/* General styles */
+.movie-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #f18720;
+    padding: 30px 0 10px 0;
+    min-height: 395px;
+  }
+  
+  .movie-wrap {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Wrap movie items to the next line if needed */
+    justify-content: space-between; /* Distribute movie items evenly */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 200px;
+  }
+  
+  
+  .movie-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 202px;
+    margin: 0 auto;
+  }
+  
+  .movie-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+    pointer-events: none;
+  }
+  
+  .movie-txt {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+  }
+  
+  .movie-txt h3 {
+    font-family: 'Futurab';
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+
+  .movie-over {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #fbdbbd;
+    padding: 25px 20px;
+    text-align: center;
+    z-index: -1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
+
+.slide-slidebox .slide-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.promotion-content{
+    position:relative;
+    width:100%;
+    height:auto;
+    padding:40px 0;
+}
+
+.promotion-title {
+    display: inline-block;
+    width: 96px;
+    height: 200px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-promotion.png) no-repeat left bottom;
+    vertical-align: top;
+    position: absolute;
+    left: 33px;
+    bottom: 67px;
+
+}
+.slide-slidebox .slide-wrapper-outer{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+.promotion-title h2{
+    font-family:'avantgarde-demi';
+    font-weight:normal;
+    font-size:28px;
+    text-transform:uppercase;
+    color:#fff;
+    transform:rotate(270deg);
+    position:relative;
+    left:30px;
+    top:83px;
+    white-space:nowrap;
+}
+.promotion-pic {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+}
+.promotion-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 170px;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+.promotion-item{
+    position:relative;
+    display:block;
+    width:88%;
+    height:auto;
+    max-width:364px;
+    margin:0 auto;
+    box-shadow:7px 7px 0 rgba(0,0,0,0.2);
+    border-radius:30px 0 30px 0;
+
+}
+
+.news-content {
+    position: relative;
+    width: 300px;
+    height: 555px;
+}
+
+/* .news-content .news-wrap .news-list{
+    padding-top: -8888px;
+} */
+.news-wrap {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.news-title {
+    display: inline-block;
+    width: 96px;
+    height: 236px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/iocn-news.png) no-repeat left bottom;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+.news-list {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+.news-title h2 {
+    font-family: 'avantgarde-demi';
+    font-weight: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    position: relative;
+    left: 30px;
+    top: 40px;
+    white-space: nowrap;
+}
+.news-row {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.news-row .link-page0{
+}
+.news-row .link-page2{
+position: relative;
+top: -222px;
+}
+.news-row .link-page1{
+    position: relative;
+    left: 623px;
+    top: -227px;
+}
+.news-row .link-page3{
+    position: relative;
+    left: 623px;
+    top: -448px;
+}
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) {
+    background-color: #e00d7a;
+    border-radius: 0 30px 0 30px;
+    -webkit-border-radius: 0px 30px 0px 30px;
+}
+.news-list .link-page {
+    display: inline-block;
+    margin: 3px 1px;
+    vertical-align: top;
+}
+.link-page {
+    position: relative;
+    width: 49%;
+    height: 186px;
+    max-width: 556px;
+    padding: 18px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.link-page a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) .pic {
+    border-radius: 0 30px 0 0;
+}
+.pic {
+    float: right;
+    width: auto;
+    height: 150px;
+    max-width: 270px;
+    overflow: hidden;
+    margin-left: 20px;
+    background: #fff;
+    border: 3px solid #fff;
+}
+.txt {
+    max-height: 140px;
+    overflow: hidden;
+    text-align: right;
+}
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) .pic img {
+    border-radius: 0 30px 0 0;
+}
+.pic img {
+    height: 146px;
+    width: auto;
+    display: block;
+}
+.txt h3 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 18px;
+}
+.news-list .news-row:nth-child(even) .link-page:nth-child(odd) {
+    background-color: #f37520;
+    border-radius: 30px 0 30px 0;
+}
+.news-list .news-row:nth-child(even) .link-page:nth-child(even) {
+    background-color: #e00d7a;
+    border-radius: 0 30px 0 30px;
+}
+
+.news-list .news-row:nth-child(odd) .link-page:nth-child(even) {
+    background-color: #f37520;
+    border-radius: 30px 0 30px 0;
+    
+}
+.news-content .news-wrap .news-title{
+    position: absolute;
+    top: 189px;
+}
+.news-content .news-wrap .news-title h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom{
+    position:relative;
+    width:100%;
+    min-height:480px;
+    padding-top:46px;
+    background-size:contain;
+    -webkit-background-size:contain;
+    background-image: url(https://www.cinestar.com.vn/pictures/moi/3HoiDap/Background/hhv2dyu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.bottom-nav{display:block;width:100%;margin:0 auto;max-width:1200px;overflow:hidden;margin-bottom:45px;text-align:center;}
+
+.bottom-nav-icon{display:block;width:90%;margin:0 auto;max-width:1200px;text-align:center;}
+.bottom-nav-icon ul{position:relative;width:auto;}
+.bottom-nav-icon ul li{display:inline-block;vertical-align:middle;margin:0 10px;}
+.bottom-nav-icon ul li a{display:block;line-height:0;font-size:0;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+.bottom-nav-icon ul li a:hover{opacity:0.5;}
+.bottom-nav-icon ul li img{pointer-events:none;}
+
+.logo-footer{
+    display:inline-block;
+    vertical-align:top;
+    width:183px;height:92px;
+    background-image:url(https://www.cinestar.com.vn/pictures/cache/moi/9Logo/trang-100x100.png);
+    cursor:pointer;
+    -webkit-background-size:contain;
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.bottom-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    text-align: right;
+    padding-top: 40px;
+}
+.bottom-wrap{display:inline-block;vertical-align:top;width:auto;text-align:right;padding-top:40px;}
+
+.bottom-wrap > div{display:inline-block;margin:0 20px;vertical-align:top;text-align:center;}
+.bottom-wrap > div h2{padding:8px 19px;font-family:'avantgarde-demi';font-weight:normal;font-size:20px;text-transform:uppercase;color:#fff;background-color:rgba(255,255,255,0.1);line-height:26px;text-align:center;margin-bottom:10px;display:inline-block;}
+
+.bottom-wrap > div ul{width:auto;max-width:344px;}
+.bottom-wrap ul li{margin-bottom:10px;}
+
+.bottom-wrap ul li[data-name='schedule'] a{pointer-events:auto !important;}
+
+.bottom-wrap ul li a{font-family:'MyriadLight';font-weight:normal;font-size:20px;text-align:center;text-transform:inherit;color:#b3c4d5;display:block;line-height:24px;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out}
+.bottom-wrap ul li a:not(.current):hover{color:#f37520;}
+.bottom-wrap ul li.current a{color:#f37520;pointer-events:none;}
+
+.social ul{position:relative;margin:3px 0 10px 0;}
+.social ul li{display:inline-block;}
+.social ul li a{width:54px;height:54px;display:block;border-radius:50%;-webkit-border-radius:50%;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;background-size:cover;-webkit-background-size:cover;text-indent:9999px;cursor:pointer;overflow:hidden;}
+.social ul li a:hover{opacity:0.5;}
+
+.social ul li a.facebook{background:url(https://www.cinestar.com.vn/catalog/view/theme/default/images/scl_facebook.png) no-repeat center center;}
+.social ul li a.youtube{background:url(https://www.cinestar.com.vn/catalog/view/theme/default/images/scl_youtube.png) no-repeat center center;}
+
+.hotline-tel{display:block;font-family:'avantgarde';font-weight:normal;font-size:30px;color:#fff;white-space:nowrap; text-decoration: none; transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out}
+.hotline-tel:hover{
+    color:#f37520;
+}
+.cinestart-price ul li{
+    list-style: none;
+}
+.cinestart-price ul li a{
+    text-decoration: none;
+}
+.cinestart ul li{
+    list-style: none;
+}
+.cinestart ul li a{
+    text-decoration: none;
+}
+.info ul li{
+    list-style: none;
+}
+.info ul li a{
+    text-decoration: none;
+}
+
+.footer{position:relative;width:100%;height:auto;overflow:hidden;}
+.payment{position:relative;width:100%;height:auto;padding:15px 20px;
+background: #fa2e91;}
+.payment h2{font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#b3c4d5;text-align:center;margin-bottom:12px;}
+.payment ul{position:relative;width:100%;height:auto;text-align:center;}
+.payment ul li{display:inline-block;margin:0 2px 4px 2px;vertical-align:middle;}
+.payment ul li a{display:block;line-height:0;font-family:none;font-size:0;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+.payment ul li a:hover{opacity:0.5;}
+
+.copyright{position:relative;width:100%;height:auto;padding:24px 20px;background:#000;}
+.copyright h2{text-align:center;margin-bottom:12px;}
+.copyright h2 a{font-family:Arial, Helvetica, sans-serif;font-size:12px;text-transform:uppercase;color:#fff;text-align:center;line-height:14px;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+.copyright h2 a:hover{color:#f2b819;}
+
+.copyright p{font-family:Arial, Helvetica, sans-serif;font-size:12px;text-transform:uppercase;color:#919191;text-align:center;line-height:14px;}
+.copyright p strong{font-family:Arial, Helvetica, sans-serif;font-weight:bold;}
+.copyright p a{font-family:Arial, Helvetica, sans-serif;color:#919191;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;white-space:nowrap;}
+.copyright p a:hover{color:#f2b819;}
+
+#Slider{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 25%;
+    transition: 0.3s;
+}
+  
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 336px;
+    top: 0;
+    left: 0;
+}
+.dot-container{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot{
+    height: 18px;
+    width: 18px;
+    background-color: #CCC;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #333;
+}
+#faq-page .content-page {
+    margin-bottom: 40px;
+}
+.content-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.faq-content {
+    position: relative;
+}
+/*NEWS-PAGE*/
+.section-title{
+    position:relative;
+    width:100%;
+    padding:40px 0;
+    z-index:1;
+}
+.section-title h2{font-family:'Futurab';font-weight:normal;font-size:30px;color:#fff;text-align:center;text-transform:uppercase;line-height:36px;}
+.faq-wrap {
+    width: 90%;
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    z-index: 1;
+}
+.faq{width:100%;height:auto;position:relative;margin:0 auto;max-width:1100px;}
+.faq ul{height:auto;position:relative;width:100%;}
+.faq li{display:block;height:auto;width:100%;margin-bottom:4px;}
+
+.faq li .ask{display:table;width:100%;background-color:rgba(0,0,0,0.5);transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;border-radius:0px 30px 0px 30px;-webkit-border-radius:0px 30px 0px 30px;min-height:76px;cursor:pointer;position:relative;}
+.faq li .cycle-num{font-family:'Futurab';font-weight:normal;color:#ededed;font-size:24px;display:table-cell;vertical-align:middle;width:80px;text-align:center;}
+
+.faq li .ask h3{font-family:'MyriadBold';font-weight:normal;color:#fff;vertical-align:middle;text-align:left;display:table-cell;vertical-align:middle;padding:10px 50px 10px 0;height:76px;}
+.faq li .ask h3 span{display:block;width:100%;max-height:76px;overflow:hidden;line-height:26px;font-size:24px;}
+.faq li .ask .st-arrow{background:url(../images/arrow7.png) no-repeat center center;width:30px;height:30px;position:absolute;right:20px;top:38px;margin-top:-15px;opacity:1;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-border-radius:50%;border-radius:50%;}
+
+
+.faq li .ask:hover{
+    background-color:#e00d7a;
+}
+.faq li .ask:hover .st-arrow{-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+.faq li.active .ask{background-color:#e00d7a;}
+.faq li.active .ask .st-arrow{-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+.faq li .answer .cycle-num{font-family:'Futurab';font-weight:normal;color:#f37520;font-size:24px;width:140px;min-width:140px;display:table-cell;text-align:center;font-weight:normal;text-transform:uppercase;vertical-align:middle;}
+
+.section-title{position:relative;width:100%;padding:40px 0;z-index:1;}
+.section-title h2{font-family:'Futurab';font-weight:normal;font-size:30px;color:#fff;text-align:center;text-transform:uppercase;line-height:36px;}
+
+.faq-form{position:relative;width:90%;height:auto;max-width:900px;margin:0 auto;padding-bottom:40px;z-index:1;}
+.faq-form form{position:relative;width:100%;height:auto;}
+
+.faq-form .name{width:100%;float:none;}
+.faq-form .tel{width:49.5%;float:left;}
+.faq-form .email{width:49.5%;float:right;}
+
+.faq-form .input-text{margin-bottom:10px;}
+.faq-form .email input[type="text"]{background-image:none;padding:0 20px;}
+.faq-form .input-text input[type="text"]{font-family:'MyriadLight';color:#818181;font-size:16px;line-height:20px;padding:10px 20px;border:1px solid #fff;width:100%;height:auto;font-weight:normal;background-color:rgba(255,255,255,1);opacity:0.8;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;box-shadow:0px 0px 40px rgba(0,0,0,0.1) inset;}
+
+.faq-form .input-text input[type="text"]:focus{background-color:#e00d7a;color:#fff;opacity:1;}
+.input-area{width:100%;height:200px;position:relative;margin:5px 0 0 0;display:inline-block;vertical-align:top;box-shadow:5px 5px 0 rgba(0,0,0,0.1);border-radius:25px;-webkit-border-radius:25px;}
+.input-area textarea{
+    border-radius:25px;
+    -webkit-border-radius:25px;
+    font-family:'MyriadLight';
+    color:#818181;
+    font-size:18px;
+    line-height:22px;
+    border:1px solid #fff;
+    width:100%;
+    height:150px;
+    padding:10px 15px;
+    font-weight:normal;
+    background-color:rgba(255,255,255,1);
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2) inset;
+}
+.input-area textarea:focus{
+    opacity:1;
+    background-color:#e00d7a;
+    color:#fff;
+}
+.faq-form .input-but{text-align:center;margin-top:34px;}
+
+.faq-form .input-but input[type="button"]{font-size:24px;padding:15px 31px;}
+
+.faq-form .focus-text{height:44px;line-height:44px;}
+
+/*register*/
+.user-form.register{padding:30px 50px;display:block;}
+.require-col{width:100%;position:relative;}
+#register .require-col:first-child, #register-top .require-col:first-child{margin-bottom:10px;}
+
+.bg-cover{background-position:center top;background-repeat:no-repeat;position:absolute;left:0;top:0;height:100%;width:100%;-webkit-background-size:cover;background-size:cover;-webkit-background-size:cover;overflow:hidden;background-attachment:scroll;z-index:0;}
+
+.answer {
+    display: none;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd; /* Đường viền xung quanh câu trả lời */
+    border-radius: 5px; /* Góc bo tròn cho câu trả lời */
+    margin-top: 10px; /* Khoảng cách giữa các câu trả lời */
+    background-color: #fff; /* Màu nền cho câu trả lời */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+  }
+  
+  /* CSS cho hiệu ứng khi câu trả lời được hiển thị */
+  .answer.active {
+    display: block;
+  }
+  
+.news-tab-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 75px;
+}
+.news-tab-wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 77px;
+}
+#news {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+.news-item{background-color:rgba(255,255,255,1);width:380px;vertical-align:top;margin:5px;float:left;cursor:pointer;display:none;
+}
+.news-item.new:before{content:'';display:block;position:absolute;left:33px;top:5px;width:46px;height:31px;z-index:1;}
+.news-bg{padding:13px;background-color:#fff;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;position:relative;}
+.news-bg:hover{background-color:#e00d7a;}
+.view-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-indent: -9999px;
+    z-index: 1;
+    overflow: hidden;
+}
+.news-pic {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.news-pic img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    pointer-events: none;
+}
+.news-txt {
+    width: 94%;
+    padding: 16px 10px;
+    background-color: #fff;
+}
+.news-txt h3{font-family:'MyriadBold';font-weight:normal;font-size:16px;color:#000;text-align:left;line-height:18px;margin-bottom:5px}
+.news-txt p{font-family:'MyriadLight';font-weight:normal;font-size:16px;color:#000;text-align:left;line-height:18px;}
+  
+.about-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+}
+.about-top{position:absolute;width:100%;height:auto;top:0;left:0;z-index:2;}
+.about-top .section-title{padding:16px 0 25px 0;}
+
+.section-title{position:relative;width:100%;padding:40px 0;z-index:1;}
+.section-title h2{font-family:'Futurab';font-weight:normal;font-size:30px;color:#fff;text-align:center;text-transform:uppercase;line-height:36px;}
+
+
+
+.about-box{position:relative;left:0;top:0;width:100%;height:auto;padding-top:180px;display:none;}
+.intro-wrap{position:relative;display:block;width:90%;margin:0 auto;max-width:1200px;margin-bottom:60px;}
+
+
+.intro-item{width:100%;position:relative;}
+.intro-item:after{content:'';display:block;width:100%;height:1px;clear:both;}
+.intro-item:nth-child(odd) + .intro-item{margin-top:-120px;margin-bottom:50px;}
+.intro-item h3{font-family:'avantgarde-demi';font-size:26px;font-weight:normal;color:#fff;line-height:30px;text-transform:uppercase;z-index:1;display:inline-block;width:auto;margin-bottom:10px;max-width:400px;}
+.intro-item:nth-child(odd) .intro-pic{float:left;margin-right:30px;}
+.intro-item:nth-child(odd) h3{background-color:#e00d7a;padding:17px 30px 17px 120px;border-radius:0px 30px 0px 0px;-webkit-border-radius:0px 50px 0px 0px;margin-left:-125px;}
+.intro-item:nth-child(odd) .intro-txt{padding:95px 100px 0 0;text-align:left;}
+.intro-item:nth-child(odd) .intro-txt p{text-align:left;}
+
+.intro-item:nth-child(even) .intro-pic{float:right;margin-left:30px;}
+.intro-item:nth-child(even) h3{background-color:#ba3469;padding:17px 120px 17px 30px;text-align:right;border-radius:30px 0px 0px 0px;-webkit-border-radius:50px 0px 0px 0px;margin-right:-125px;}
+.intro-item:nth-child(even) .intro-txt{padding:95px 0 0 100px;text-align:right;}
+.intro-item:nth-child(even) .intro-txt p{text-align:right;}
+.intro-pic{position:relative;width:500px;height:500px;border-radius:50%;-webkit-border-radius:50%;overflow:hidden;border:6px solid #fff;line-height:0;z-index:2;box-shadow:10px 10px 0 rgba(0,0,0,0.2);}
+
+.intro-txt{display:block;}
+.intro-txt p{font-family:'MyriadRegular';font-size:18px;font-weight:normal;color:#fff;line-height:30px;overflow:hidden;}
+
+.intro-note{width:90%;max-width:1200px;margin:0 auto;display:block;position:relative;text-align:center;}
+.intro-note p{font-family:'MyriadRegular';font-size:18px;font-weight:normal;color:#fff;line-height:30px;text-align:center;margin-bottom:40px;}
+
+p.welcom{position:relative;display:inline-block;font-family:'MyriadBold';font-size:24px;font-weight:normal;color:#fff;line-height:24px;text-align:center;font-style:italic;padding:0 60px;}
+p.welcom:before{content:'';display:block;width:34px;height:27px;position:absolute;left:0;top:0;background:url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-welcome-bf.png) no-repeat  center top;}
+p.welcom:after{content:'';display:block;width:34px;height:27px;position:absolute;right:0;top:15px;background:url(	https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-welcome-af.png) no-repeat  center top;}
+
+.cinema-img-wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.cinema-img-content{position:relative;width:100%;height:auto;}
+.cinema-img-wrap{width:90%;max-width:1200px;margin:0 auto;text-align:center;}
+.cinema-img-slide{position:relative;width:100%;height:auto;}
+.cinema-img-item{position:relative;width:auto;text-align:center;}
+
+.cinema-pic{display:block;width:96%;vertical-align:top;line-height:0;overflow:hidden;position:relative;max-width:400px;max-height:267px;margin:10px 2px;box-shadow:10px 10px 0 rgba(0,0,0,0.1);border:3px solid #5c1a55;margin:0 auto 15px auto;}
+.cinema-pic img{display:block;width:100%;height:auto;}
+.cinema-pic .zoom{margin:0;bottom:auto;left:15px;top:15px;}
+
+.contact-info-content{position:relative;width:100%;height:auto;background-repeat:no-repeat;background-size:cover;-webkit-background-size:cover;background-position:center bottom;}
+.contact-info-wrap{width:90%;max-width:1000px;margin:0 auto;display:block;text-align:center; position:relative; z-index:2}
+.contact-info-wrap h3{font-family:'Futurab';font-weight:normal;font-size:36px;color:#fff;text-transform:uppercase;margin-bottom:15px;}
+.contact-info-wrap p{font-family:'MyriadRegular';font-weight:normal;font-size:24px;color:#fff;line-height:30px;}
+.contact-info-wrap p strong{font-family:'MyriadBold';font-weight:normal;font-size:24px;color:#fff;}
+.contact-info-wrap p a{color:#fff;}
+
+
+.contact-form{
+    position:relative;
+    width:90%;
+    height:auto;
+    max-width:900px;
+    margin:0 auto 0px auto;
+    padding-bottom: 40px;
+}
+.contact-form form{position:relative;width:100%;height:auto;}
+.contact-form .name{width:100%;float:none;}
+.contact-form .tel{width:49.5%;float:left;}
+.contact-form .email{width:49.5%;float:right;}
+
+.contact-form .input-text{margin-bottom:10px;}
+.contact-form .email input[type="text"]{background-image:none;padding:0 20px;}
+.contact-form .input-text input[type="text"]{font-family:'MyriadLight';color:#818181;font-size:18px;line-height:20px;padding:10px 20px;border:1px solid #fff;width:100%;height:auto;font-weight:normal;background-color:rgba(255,255,255,1);opacity:0.8;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+
+.contact-form .input-text input[type="text"]:focus{background-color:#e00d7a;color:#fff; opacity:1}
+.contact-form .input-but{text-align:center;margin-top:34px;}
+.contact-form .input-but input[type="button"]{font-size:30px;padding:10px 38px;}
+.contact-form .focus-text{height:44px;line-height:44px;}
+
+
+.require-col{width:100%;position:relative;}
+#register .require-col:first-child, #register-top .require-col:first-child{margin-bottom:10px;}
+
+.service-wrap{
+    margin: 0 180px;
+    position: relative;
+}
+.khung{
+    border: 1px solid white;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 44px;
+}
+.khung1{
+    border: 1px solid white;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 44px;
+    position: relative;
+    margin-top: 50px;
+}
+.khung img{
+    position: absolute;
+    top: 22px;
+    right: 0;
+
+}
+.khung1 img{
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 355px;
+    height: 250px;
+    padding-right: 44px;
+
+}
+.noidung{
+    position: relative;
+}
+
+/*--------------------------- Phim -----------------------------*/
+
+.movie-slide{
+    border: 0;
+    width: 80%;
+    height: auto;
+    min-height: 500px;
+    padding: 30px 30px;
+    margin: 50px 10%;
+    background-color: #c90b68;
+}
+.content-movie{
+    border: 0;
+    width: 90%;
+    padding: 10px 10px;
+    height: auto;
+    min-height: 433px;
+    position: relative;
+    background-color: rgba(141, 173, 25, 0.642);
+    margin: 20px auto;
+  }
+  
+  .content-movie img{
+    width: 297px;
+    height: 434px;
+    position: absolute;
+    left: 0;
+    float: left;
+  }
+
+
+  .content-movie .movie-content-lane{
+    margin-left: 30%;
+    color: #d1d1d1;
+    padding: 20px;
+  }
+  .content-movie button{
+    border: 1px solid;
+    width: 200px;
+    height: fit-content;
+    padding: 30px 30px;
+    margin-left: 30%;
+    margin-top: 15%;
+    border-radius: 50px 50px;
+    background-color: #c90b68;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: +30px;
+  }
+  .content-movie button:hover{
+    background-color: #f18720;
+  }
+  .flex-container {
+    display: flex;
+}
+  .movie-wrap {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Wrap movie items to the next line if needed */
+    justify-content: space-between; /* Distribute movie items evenly */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 200px;
+  }
+  
+  
+  .movie-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 202px;
+    margin: 0 auto;
+  }
+  
+  .movie-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+    pointer-events: none;
+  }
+  
+  .movie-txt {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+  }
+  
+  .movie-txt h3 {
+    font-family: 'Futurab';
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+
+  .movie-over {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #fbdbbd;
+    padding: 25px 20px;
+    text-align: center;
+    z-index: -1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
+
+.slide-slidebox .slide-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.promotion-content{
+    position:relative;
+    width:100%;
+    height:auto;
+    padding:40px 0;
+}
+
+.promotion-title {
+    display: inline-block;
+    width: 96px;
+    height: 200px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-promotion.png) no-repeat left bottom;
+    vertical-align: top;
+    position: absolute;
+    left: 33px;
+    bottom: 67px;
+
+}
+.slide-slidebox .slide-wrapper-outer{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+.promotion-title h2{
+    font-family:'avantgarde-demi';
+    font-weight:normal;
+    font-size:28px;
+    text-transform:uppercase;
+    color:#fff;
+    transform:rotate(270deg);
+    position:relative;
+    left:30px;
+    top:83px;
+    white-space:nowrap;
+}
+.promotion-pic {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+}
+.promotion-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 170px;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+.promotion-item{
+    position:relative;
+    display:block;
+    width:88%;
+    height:auto;
+    max-width:364px;
+    margin:0 auto;
+    box-shadow:7px 7px 0 rgba(0,0,0,0.2);
+    border-radius:30px 0 30px 0;
+
+}
+
+.news-content {
+    position: relative;
+    width: 300px;
+    height: 555px;
+}
+.cach-dong{
+    border-bottom: 1px solid red;
+    width: 1400px;
+    position: relative;
+    top: -366px;
+    
+}
+/* .news-content .news-wrap .news-list{
+    padding-top: -8888px;
+} */
+.news-wrap {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.news-title {
+    display: inline-block;
+    width: 96px;
+    height: 236px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/iocn-news.png) no-repeat left bottom;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+.news-list {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+.news-title h2 {
+    font-family: 'avantgarde-demi';
+    font-weight: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    position: relative;
+    left: 30px;
+    top: 40px;
+    white-space: nowrap;
+}
+.news-row {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.news-row .link-page0{
+}
+.news-row .link-page2{
+position: relative;
+top: -222px;
+}
+.news-row .link-page1{
+    position: relative;
+    left: 623px;
+    top: -227px;
+}
+.news-row .link-page3{
+    position: relative;
+    left: 623px;
+    top: -448px;
+}
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) {
+    background-color: #e00d7a;
+    border-radius: 0 30px 0 30px;
+    -webkit-border-radius: 0px 30px 0px 30px;
+}
+.news-list .link-page {
+    display: inline-block;
+    margin: 3px 1px;
+    vertical-align: top;
+}
+.link-page {
+    position: relative;
+    width: 49%;
+    height: 186px;
+    max-width: 556px;
+    padding: 18px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.link-page a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) .pic {
+    border-radius: 0 30px 0 0;
+}
+.pic {
+    float: right;
+    width: auto;
+    height: 150px;
+    max-width: 270px;
+    overflow: hidden;
+    margin-left: 20px;
+    background: #fff;
+    border: 3px solid #fff;
+}
+.txt {
+    max-height: 140px;
+    overflow: hidden;
+    text-align: right;
+}
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) .pic img {
+    border-radius: 0 30px 0 0;
+}
+.pic img {
+    height: 146px;
+    width: auto;
+    display: block;
+}
+.txt h3 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 18px;
+}
+.news-list .news-row:nth-child(even) .link-page:nth-child(odd) {
+    background-color: #f37520;
+    border-radius: 30px 0 30px 0;
+}
+.news-list .news-row:nth-child(even) .link-page:nth-child(even) {
+    background-color: #e00d7a;
+    border-radius: 0 30px 0 30px;
+}
+
+.news-list .news-row:nth-child(odd) .link-page:nth-child(even) {
+    background-color: #f37520;
+    border-radius: 30px 0 30px 0;
+    
+}
+.news-content .news-wrap .news-title{
+    position: absolute;
+    top: 189px;
+}
+.news-content .news-wrap .news-title h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom{position:relative;width:100%;min-height:480px;padding-top:46px;background:url(../images/line-bg.png) repeat-x left top;background-size:contain;-webkit-background-size:contain;}
+.bottom-nav{display:block;width:100%;margin:0 auto;max-width:1200px;overflow:hidden;margin-bottom:45px;text-align:center;}
+
+.bottom-nav-icon{display:block;width:90%;margin:0 auto;max-width:1200px;text-align:center;}
+.bottom-nav-icon ul{position:relative;width:auto;}
+.bottom-nav-icon ul li{display:inline-block;vertical-align:middle;margin:0 10px;}
+.bottom-nav-icon ul li a{display:block;line-height:0;font-size:0;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+.bottom-nav-icon ul li a:hover{opacity:0.5;}
+.bottom-nav-icon ul li img{pointer-events:none;}
+
+.logo-footer{display:inline-block;vertical-align:top;width:183px;height:92px;background-image:url(https://www.cinestar.com.vn/pictures/cache/moi/9Logo/trang-100x100.png);cursor:pointer;-webkit-background-size:contain;background-size:contain;background-position:center center;background-repeat:no-repeat;}
+
+.bottom-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    text-align: right;
+    padding-top: 40px;
+}
+.bottom-wrap{display:inline-block;vertical-align:top;width:auto;text-align:right;padding-top:40px;}
+
+.bottom-wrap > div{display:inline-block;margin:0 20px;vertical-align:top;text-align:center;}
+.bottom-wrap > div h2{padding:8px 19px;font-family:'avantgarde-demi';font-weight:normal;font-size:20px;text-transform:uppercase;color:#fff;background-color:rgba(255,255,255,0.1);line-height:26px;text-align:center;margin-bottom:10px;display:inline-block;}
+
+.bottom-wrap > div ul{width:auto;max-width:344px;}
+.bottom-wrap ul li{margin-bottom:10px;}
+
+.bottom-wrap ul li[data-name='schedule'] a{pointer-events:auto !important;}
+
+.bottom-wrap ul li a{font-family:'MyriadLight';font-weight:normal;font-size:20px;text-align:center;text-transform:inherit;color:#b3c4d5;display:block;line-height:24px;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out}
+.bottom-wrap ul li a:not(.current):hover{color:#f37520;}
+.bottom-wrap ul li.current a{color:#f37520;pointer-events:none;}
+
+.social ul{position:relative;margin:3px 0 10px 0;}
+.social ul li{display:inline-block;}
+.social ul li a{width:54px;height:54px;display:block;border-radius:50%;-webkit-border-radius:50%;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;background-size:cover;-webkit-background-size:cover;text-indent:9999px;cursor:pointer;overflow:hidden;}
+.social ul li a:hover{opacity:0.5;}
+
+.social ul li a.facebook{background:url(https://www.cinestar.com.vn/catalog/view/theme/default/images/scl_facebook.png) no-repeat center center;}
+.social ul li a.youtube{background:url(https://www.cinestar.com.vn/catalog/view/theme/default/images/scl_youtube.png) no-repeat center center;}
+
+.hotline-tel{display:block;font-family:'avantgarde';font-weight:normal;font-size:30px;color:#fff;white-space:nowrap; text-decoration: none; transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out}
+.hotline-tel:hover{
+    color:#f37520;
+}
+.cinestart-price ul li{
+    list-style: none;
+}
+.cinestart-price ul li a{
+    text-decoration: none;
+}
+.cinestart ul li{
+    list-style: none;
+}
+.cinestart ul li a{
+    text-decoration: none;
+}
+.info ul li{
+    list-style: none;
+}
+.info ul li a{
+    text-decoration: none;
+}
+
+.footer{position:relative;width:100%;height:auto;overflow:hidden;}
+.payment{position:relative;width:100%;height:auto;padding:15px 20px;
+background: #fa2e91;}
+.payment h2{font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#b3c4d5;text-align:center;margin-bottom:12px;}
+.payment ul{position:relative;width:100%;height:auto;text-align:center;}
+.payment ul li{display:inline-block;margin:0 2px 4px 2px;vertical-align:middle;}
+.payment ul li a{display:block;line-height:0;font-family:none;font-size:0;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+.payment ul li a:hover{opacity:0.5;}
+
+.copyright{position:relative;width:100%;height:auto;padding:24px 20px;background:#000;}
+.copyright h2{text-align:center;margin-bottom:12px;}
+.copyright h2 a{font-family:Arial, Helvetica, sans-serif;font-size:12px;text-transform:uppercase;color:#fff;text-align:center;line-height:14px;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+.copyright h2 a:hover{color:#f2b819;}
+
+.copyright p{font-family:Arial, Helvetica, sans-serif;font-size:12px;text-transform:uppercase;color:#919191;text-align:center;line-height:14px;}
+.copyright p strong{font-family:Arial, Helvetica, sans-serif;font-weight:bold;}
+.copyright p a{font-family:Arial, Helvetica, sans-serif;color:#919191;transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;white-space:nowrap;}
+.copyright p a:hover{color:#f2b819;}
+
+#Slider{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    overflow-x: hidden;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 25%;
+    transition: 0.3s;
+}
+  
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 336px;
+    top: 0;
+    left: 0;
+}
+.dot-container{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot{
+    height: 18px;
+    width: 18px;
+    background-color: #CCC;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #333;
+}
+.bg-cover{background-position:center top;background-repeat:no-repeat;position:absolute;left:0;top:0;height:100%;width:100%;-webkit-background-size:cover;background-size:cover;-webkit-background-size:cover;overflow:hidden;background-attachment:scroll;z-index:0;}

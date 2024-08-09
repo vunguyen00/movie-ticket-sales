@@ -1,0 +1,568 @@
+/* Home Page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(rgba(90, 5, 103, 0), rgba(33, 4, 160, 0)), url('https://www.onlinekhabar.com/wp-content/uploads/2020/03/film-hall.jpg');
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px); /* Adjust the value to increase/decrease the blur effect */
+    z-index: -1;
+}
+
+.main_body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 111;
+    position: sticky;
+    top:0;
+    background-blend-mode: overlay;
+}
+
+.chung {
+    width: 90%;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.function {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.viTri {
+    display: flex;
+    border-bottom: solid 2px wheat;
+    align-content: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.viTri a img {
+    height: 60px;
+    width: 170px;
+}
+
+.bookAndpd {
+    padding: 20px;
+    margin-left: 70px;
+}
+
+.bookAndpd a {
+    padding: 10px 20px;
+    background-color: rgb(130, 83, 12);
+}
+
+.bookAndpd .Booking_T:hover {
+    background-color: aqua;
+    color: yellow;
+}
+
+.Booking_F:hover {
+    color: blue;
+    background-color: brown;
+}
+
+.searchAndLogin {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 230px;
+    padding-left: 40px;
+}
+
+.search-container button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-container button svg {
+    fill: currentColor;
+}
+
+.Login {
+    margin-left: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+}
+
+.chose_feature {
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.Location2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+}
+
+.Location2 .first {
+    position: absolute;
+    left: 0;
+}
+.Location2 .first a{
+    padding: 0 0 0 10px;
+}
+
+.Location2 .second {
+    position: absolute;
+    right: 0;
+}
+.Location2 .second a{
+    padding: 0 0 0 10px;
+}
+.Location2 .second a:hover{
+    color: yellow;
+}
+.first .menu1 {
+    display: none;
+    background: linear-gradient(rgb(107, 0, 178), rgb(8, 0, 12));
+    padding: 20px;
+    margin-top: 20px;
+}
+.menu1{
+    list-style-type: none;
+}
+.first button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.first:hover .menu1 {
+    display: flex;
+}
+.menu1 li a:hover{
+    color: yellow;
+}
+
+.end_page {
+    width: 100%;
+    background-color: #333; /* Background color for the footer */
+    border-top: 2px solid #ccc; /* Border at the top of the footer */
+    padding: 20px 0; /* Padding for spacing */
+    color: white; /* Text color */
+    position: relative;
+    bottom: 0;
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto; /* Center the footer content */
+}
+
+.footer .container {
+    width: 100%;
+}
+
+.footer-wr {
+    width: 100%;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+.footer-item .text {
+    font-weight: bold;
+}
+
+.footer-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin: 5px 0;
+}
+
+.footer-item ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-left {
+    font-size: 14px;
+}
+
+.footer-bottom .menu-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom .menu-list li {
+    margin: 0;
+}
+
+.footer-bottom .menu-list li a {
+    font-size: 14px;
+}
+
+.ft-author {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ft-author-content ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.ft-author-content ul li {
+    margin: 5px 0;
+}
+
+.ft-bct a img {
+    width: 143px;
+    display: block;
+    margin: 0 auto;
+}
+.slider-container {
+    position: relative;
+    width: 1000px;
+    margin: 2vw 2vh;
+}
+.slider {
+    overflow: hidden;
+    width: 1020px;
+    height: 365px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    width: 1000px;
+    height: 365px;
+}
+.nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.container1{
+    height: fit-content;
+    padding: 10px;
+    width: 1010px;
+}
+.container1 h3{
+    text-align: center;
+    color: white;
+}
+
+.playing_movie,.comming_movie{
+    border: solid 1px black;
+    background: #390e0e97;
+}
+.playing_movies, .comming_movies{
+    display: flex;
+    overflow: hidden;
+}
+.playing_movie, .comming_movie{
+    padding: 13px;
+    position: relative;
+}
+
+.movie_information {
+    display: none; /* Ẩn đi ban đầu */
+    position: absolute; /* Hiển thị lên trên */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Nền đen mờ */
+    color: white;
+    padding: 20px;
+    z-index: 10; /* Hiển thị lên trên các phần tử khác */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.movie{
+    height: 400px;
+}
+.movie img {
+    width: 200px;
+    height: 300px;
+}
+.movie:hover .movie_information {
+    display: block; /* Hiển thị khi hover vào phần movie */
+}
+
+.name{
+    text-align: center;
+    color: white;
+}
+.react{
+    display: flex;
+    justify-content: space-between;
+}
+/*chi tiet phim*/
+.chiTietPhim {
+    border: 0;
+    width: 150vh;
+    height: fit-content;
+    background-color: #ffd904;
+    display: flex;
+    padding:50px;
+    margin: 50px;
+}
+
+.chiTietPhim img {
+    width: 400px;
+    height: 500px;
+    margin: 40px 80px;
+    box-shadow: 0 7px 5px 7px rgba(57, 55, 55, 0.5);
+}
+
+.MoTa {
+    width: 85%;
+    height: 70%;
+    margin-top: 40px;
+    background-color: rgb(255, 166, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+    border: 2px solid #333;
+    box-shadow: 0 7px 5px 7px rgba(57, 55, 55, 0.5);
+}
+
+.khoangCach {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    color: white;
+}
+
+.khoangCach .phanMot {
+    position: absolute;
+}
+
+.khoangCachInner {
+    display: flex;
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: space-between;
+    /* Căn cách hai phần */
+}
+
+.khoangCach .phan2 {
+    color: #000;
+    font-size: 20px;
+    margin-left: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: fit-content;
+    border: 0;
+    border-radius: 20px 0px 20px 0px;
+    background-color: white;
+}
+.LienKet{
+    display: flex;
+}
+.LienKet h2{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px;
+    margin: 10px;
+}
+/* lich chieu*/
+
+/* Nội dung trang */
+.Page_Content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.thoiGianChieu {
+    background-color: #f7c948; /* Màu vàng nhạt cho nền */
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thoiGianChieu:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thoiGianChieu .anhPhim img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover; /*bao phủ hình ảnh dù bất kỳ kích thước*/
+    margin-right: 20px;
+}
+
+.gioChieu {
+    background-color: #4c11aa;
+    width: calc(100% - 220px);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.gioChieu h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.gioChieu h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.gioChieu a {
+    color: white;
+    border: solid 1px #fff;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.gioChieu a:hover {
+    background-color: #fff;
+    color: #4c11aa;
+    border-color: #4c11aa;
+}
+
+.showtimes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.showtimes-container .showtime-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.showtimes-container .showtime-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* CSS for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.dropdown-content {
+    margin-top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(215, 50, 50, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}

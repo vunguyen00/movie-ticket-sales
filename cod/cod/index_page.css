@@ -1,0 +1,461 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #f4f4f4;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed; */
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(5px); /* Adjust the value to increase/decrease the blur effect */
+    z-index: -1;
+}
+
+.main_body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% {
+        background: linear-gradient(135deg, #b56ded, #2193b0);
+    }
+    50% {
+        background: linear-gradient(135deg, #de4bd4, #6dd5ed);
+    }
+    100% {
+        background: linear-gradient(135deg, #6a2473, #2193b0);
+    }
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 111;
+    position: sticky;
+    top:0;
+    background-blend-mode: overlay;
+}
+
+.chung {
+    width: 90%;
+    border-radius: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.function {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.viTri {
+    display: flex;
+    border-bottom: solid 2px wheat;
+    align-content: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.viTri a img {
+    height: 60px;
+    width: 170px;
+}
+
+.bookAndpd {
+    padding: 20px;
+    margin-left: 70px;
+}
+
+.bookAndpd a {
+    padding: 10px 20px;
+    background-color: rgb(130, 83, 12);
+}
+
+.bookAndpd .Booking_T:hover {
+    background-color: aqua;
+    color: yellow;
+}
+
+.Booking_F:hover {
+    color: blue;
+    background-color: brown;
+}
+
+.searchAndLogin {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 230px;
+    padding-left: 40px;
+}
+
+.search-container button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-container button svg {
+    fill: currentColor;
+}
+
+.Login {
+    margin-left: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+}
+
+.chose_feature {
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.Location2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+}
+
+.Location2 .first {
+    position: absolute;
+    left: 0;
+}
+.Location2 .first a{
+    padding: 0 0 0 10px;
+}
+
+.Location2 .second {
+    position: absolute;
+    right: 0;
+}
+.Location2 .second a{
+    padding: 0 0 0 10px;
+}
+.Location2 .second a:hover{
+    color: yellow;
+}
+.first .menu1 {
+    display: none;
+    background: linear-gradient(rgb(107, 0, 178), rgb(8, 0, 12));
+    padding: 20px;
+    margin-top: 20px;
+}
+.menu1{
+    list-style-type: none;
+}
+.first button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.first:hover .menu1 {
+    display: flex;
+}
+.menu1 li a:hover{
+    color: yellow;
+}
+
+
+/* CSS for dropdown tren phan dang nhap*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.dropdown-content {
+    margin-top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(215, 50, 50, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* phaafn giuawahsfahesif */
+.Page_Content{
+    width: 80%;  
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* CSS cho slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.slick-slide:hover img {
+    transform: scale(1.1);
+}
+
+/* CSS cho playing movies và coming movies */
+.playing_movies, .comming_movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các mục phim */
+    justify-content: center;
+}
+.playing_movie {
+    flex: 0 1 calc(25% - 20px); /* 4 mục mỗi hàng, trừ khoảng cách giữa các mục */
+    box-sizing: border-box;
+}
+
+.movie {
+    position: relative;
+    overflow: hidden;
+    /* width: 100%; */
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    /* align-items: center;
+    text-align: center; */
+}
+
+.movie:hover img {
+    transform: scale(1.1);
+}
+
+.movie_information {
+    position: absolute;
+    top: 54%;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    background: rgba(96, 92, 92, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    z-index: 0;
+}
+
+.movie:hover .movie_information {
+    opacity: 1;
+}
+
+.movie_information h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.movie_information p {
+    margin: 5px 0;
+}
+
+.movie_information a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.movie_information a:hover {
+    background-color: orange;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .movie_information {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie_information {
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+/* foooter */
+
+.end_page {
+    width: 100%;
+    background-color: #333; /* Background color for the footer */
+    border-top: 2px solid #ccc; /* Border at the top of the footer */
+    padding: 20px 0; /* Padding for spacing */
+    color: white; /* Text color */
+    position: relative;
+    bottom: 0;
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto; /* Center the footer content */
+}
+
+.footer .container {
+    width: 100%;
+}
+
+.footer-wr {
+    width: 100%;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+.footer-item .text {
+    font-weight: bold;
+}
+
+.footer-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin: 5px 0;
+}
+
+.footer-item ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-left {
+    font-size: 14px;
+}
+
+.footer-bottom .menu-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom .menu-list li {
+    margin: 0;
+}
+
+.footer-bottom .menu-list li a {
+    font-size: 14px;
+}
+
+.ft-author {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ft-author-content ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.ft-author-content ul li {
+    margin: 5px 0;
+}
+
+.ft-bct a img {
+    width: 143px;
+    display: block;
+    margin: 0 auto;
+}

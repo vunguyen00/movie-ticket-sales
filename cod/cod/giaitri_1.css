@@ -1,0 +1,67 @@
+@import url(index.css);
+.Page_Content{
+    text-align: center;
+    margin: 0 auto;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% {
+        background: linear-gradient(135deg, #b56ded, #2193b0);
+    }
+    50% {
+        background: linear-gradient(135deg, #de4bd4, #6dd5ed);
+    }
+    100% {
+        background: linear-gradient(135deg, #6a2473, #2193b0);
+    }
+}
+.text_center{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.text_center h1{
+    color: white;
+}
+
+.text_center p{
+    text-align: center;
+    padding: 0 200px;
+    font-size: 25px;
+}
+.bottom_all{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.bat{
+    width: 600px;
+    height: 120px;
+    background-color: aquamarine;
+    margin: 20px;
+    animation: changeColor 5s infinite;
+}
+.bat a{
+    color: black;
+    margin-top: 5px;
+}
+.bat div{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+@keyframes changeColor {
+    0% {
+        background-color: rgb(236, 182, 182);
+    }
+    25% {
+        background-color: rgb(225, 225, 169);
+    }
+    50% {
+        background-color: rgb(168, 237, 168);
+    }
+    75% {
+        background-color: rgb(162, 162, 247);
+    }
+    100% {
+        background-color: rgb(241, 157, 195);
+    }
+}

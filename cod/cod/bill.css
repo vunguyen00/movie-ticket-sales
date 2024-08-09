@@ -1,0 +1,73 @@
+/* bill.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    border: solid 1px;
+    width: 300px;
+    margin-left: 45%;
+}
+body p{
+    margin: 9px;
+}
+h1 {
+    margin: 20px 0;
+}
+
+p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+form {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    .container {
+        padding: 20px;
+    }
+}
